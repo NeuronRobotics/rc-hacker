@@ -13282,6 +13282,7 @@ by exp-lbrs.ulp</description>
 <part name="C7" library="adafruit" deviceset="C-US" device="C0805"/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
+<part name="JP4" library="adafruit" deviceset="PINHD-1X6" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13365,6 +13366,7 @@ VCC Range:
 <instance part="C7" gate="G$1" x="381" y="154.94"/>
 <instance part="GND18" gate="1" x="314.96" y="208.28"/>
 <instance part="+3V8" gate="G$1" x="294.64" y="154.94"/>
+<instance part="JP4" gate="A" x="238.76" y="220.98"/>
 </instances>
 <busses>
 </busses>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="3" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="11" fill="1" visible="yes" active="yes"/>
@@ -149,11 +149,11 @@
 <wire x1="2" y1="0" x2="0" y2="2" width="0.2" layer="20" curve="-90"/>
 <wire x1="0" y1="2" x2="0" y2="29.5" width="0.2" layer="20"/>
 <wire x1="0" y1="29.5" x2="2" y2="31.5" width="0.2" layer="20" curve="-90"/>
-<wire x1="2" y1="31.5" x2="52" y2="31.5" width="0.2" layer="20"/>
-<wire x1="52" y1="31.5" x2="54" y2="29.5" width="0.2" layer="20" curve="-90"/>
-<wire x1="54" y1="29.5" x2="54" y2="2" width="0.2" layer="20"/>
-<wire x1="54" y1="2" x2="52" y2="0" width="0.2" layer="20" curve="-90"/>
-<wire x1="52" y1="0" x2="2" y2="0" width="0.2" layer="20"/>
+<wire x1="2" y1="31.5" x2="54" y2="31.5" width="0.2" layer="20"/>
+<wire x1="54" y1="31.5" x2="56" y2="29.5" width="0.2" layer="20" curve="-90"/>
+<wire x1="56" y1="29.5" x2="56" y2="2" width="0.2" layer="20"/>
+<wire x1="56" y1="2" x2="54" y2="0" width="0.2" layer="20" curve="-90"/>
+<wire x1="54" y1="0" x2="2" y2="0" width="0.2" layer="20"/>
 <wire x1="0" y1="32.5" x2="54" y2="32.5" width="0.2" layer="90"/>
 <wire x1="-3" y1="27.5" x2="-3" y2="0" width="0.2" layer="90"/>
 <rectangle x1="33.75" y1="24.45" x2="49.75" y2="31.2" layer="41"/>
@@ -165,8 +165,8 @@
 <circle x="15.2" y="29" radius="0.14141875" width="0.2" layer="22"/>
 <hole x="2" y="2" drill="3"/>
 <hole x="2" y="29.5" drill="3"/>
-<hole x="52" y="2" drill="3"/>
-<hole x="52" y="29.5" drill="3"/>
+<hole x="54" y="2" drill="3"/>
+<hole x="54" y="29.5" drill="3"/>
 <text x="18.0193625" y="29.3" size="0.8128" layer="21" font="vector">Speaker</text>
 <text x="11.4" y="10" size="1.27" layer="21" font="vector" rot="R180">0</text>
 <text x="13.9" y="10" size="1.27" layer="21" font="vector" rot="R180">1</text>
@@ -209,8 +209,10 @@
 <text x="6.22" y="13.08" size="1.27" layer="21" font="vector">M1</text>
 <text x="6.22" y="9.58" size="1.27" layer="21" font="vector">M2</text>
 <text x="6.22" y="6.08" size="1.27" layer="21" font="vector">M2</text>
-<text x="49.22" y="4.58" size="1.27" layer="21" font="vector">RST</text>
-<text x="52.92" y="7.72" size="1.27" layer="21" font="vector" rot="R90">RC Hacker Rev 1</text>
+<text x="32.22" y="5.58" size="1.27" layer="21" font="vector">RST</text>
+<text x="41.72" y="1.08" size="1.27" layer="21" font="vector">RC Hacker
+Rev 1</text>
+<text x="54.42" y="5.22" size="1.27" layer="21" font="vector" rot="R90">PGM</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
@@ -893,10 +895,10 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="27.8168" y="27.0354" size="0.3048" layer="25" font="vector"/>
 <attribute name="VALUE" x="27.8168" y="19.7334" size="1.27" layer="27"/>
 </element>
-<element name="U4" library="SparkFun-PowerIC" package="SOT23-5" value="AP2112K-3.3V" x="37.25" y="2.6524" smashed="yes">
-<attribute name="PROD_ID" value="VREG-12457" x="33.44" y="9.0024" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="36.861" y="4.8114" size="0.3048" layer="25" font="vector"/>
-<attribute name="VALUE" x="36.7975" y="2.4619" size="0.4064" layer="27"/>
+<element name="U4" library="SparkFun-PowerIC" package="SOT23-5" value="AP2112K-3.3V" x="33.25" y="2.6524" smashed="yes">
+<attribute name="PROD_ID" value="VREG-12457" x="29.44" y="9.0024" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="32.861" y="4.8114" size="0.3048" layer="25" font="vector"/>
+<attribute name="VALUE" x="32.7975" y="2.4619" size="0.4064" layer="27"/>
 </element>
 <element name="C3" library="rcl" package="E2-5" value="" x="12.0693625" y="24" smashed="yes" rot="R180">
 <attribute name="NAME" x="9.5293625" y="22.984" size="0.3048" layer="25" font="vector" ratio="10" rot="R180"/>
@@ -906,17 +908,17 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="12.959359375" y="27.095" size="0.3048" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="12.959359375" y="31.286" size="0.4064" layer="27" font="vector" rot="R180"/>
 </element>
-<element name="R4" library="rcl" package="R0805" value="330" x="41.25" y="3.65" smashed="yes">
-<attribute name="NAME" x="40.488" y="4.666" size="0.3048" layer="25" font="vector"/>
-<attribute name="VALUE" x="40.488" y="1.364" size="1.27" layer="27"/>
+<element name="R4" library="rcl" package="R0805" value="330" x="37.25" y="3.65" smashed="yes">
+<attribute name="NAME" x="36.488" y="4.666" size="0.3048" layer="25" font="vector"/>
+<attribute name="VALUE" x="36.488" y="1.364" size="1.27" layer="27"/>
 </element>
-<element name="C4" library="adafruit" package="C0805" value="" x="41.25" y="1.65" smashed="yes">
-<attribute name="NAME" x="40.361" y="2.666" size="0.3048" layer="25" font="vector"/>
-<attribute name="VALUE" x="40.361" y="-0.636" size="1.27" layer="27"/>
+<element name="C4" library="adafruit" package="C0805" value="" x="37.25" y="1.65" smashed="yes">
+<attribute name="NAME" x="36.361" y="2.666" size="0.3048" layer="25" font="vector"/>
+<attribute name="VALUE" x="36.361" y="-0.636" size="1.27" layer="27"/>
 </element>
-<element name="C5" library="adafruit" package="C0805" value="" x="34.45" y="2.7" smashed="yes" rot="R90">
-<attribute name="NAME" x="33.434" y="1.811" size="0.3048" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" x="36.736" y="1.811" size="1.27" layer="27" rot="R90"/>
+<element name="C5" library="adafruit" package="C0805" value="" x="30.45" y="2.7" smashed="yes" rot="R90">
+<attribute name="NAME" x="29.434" y="1.811" size="0.3048" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="32.736" y="1.811" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="JP6" library="adafruit" package="1X06" value="" x="17" y="7.08" smashed="yes">
 <attribute name="NAME" x="9.3038" y="9.4088" size="0.3048" layer="25" font="vector" ratio="10"/>
@@ -934,13 +936,14 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="34.0835" y="1.3155" size="1.4224" layer="27"/>
 <attribute name="NAME" x="34.0835" y="32.3155" size="0.3048" layer="25" font="vector"/>
 </element>
-<element name="SW1" library="adafruit" package="KMR2" value="SPST_TACT-KMR2" x="46.45" y="2.6" smashed="yes" rot="R180"/>
+<element name="SW1" library="adafruit" package="KMR2" value="SPST_TACT-KMR2" x="30.4" y="7.45" smashed="yes" rot="R270"/>
 <element name="U5" library="ALC5628" package="QFN24" value="ALC5628" x="20.4" y="25.7" rot="R180"/>
 <element name="JP3" library="SparkFun-Connectors" package="1X02" value="M02PTH" x="16.051640625" y="29.806359375" smashed="yes" rot="R270">
 <attribute name="VALUE" x="12.876640625" y="31.076359375" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C6" library="adafruit" package="C0805" value="" x="28.5788" y="23.9806"/>
 <element name="C7" library="adafruit" package="C0805" value="" x="28.5788" y="22.0194"/>
+<element name="JP4" library="adafruit" package="1X06" value="" x="54" y="17" rot="R90"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1020,9 +1023,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="20.15" y1="23.725" x2="22.375" y2="24.95" width="0" layer="19" extent="1-1"/>
 <wire x1="19.65" y1="27.675" x2="22.375" y2="24.95" width="0" layer="19" extent="1-1"/>
 <wire x1="33.6835" y1="9.0155" x2="33.6835" y2="19.0155" width="0" layer="19" extent="1-1"/>
-<wire x1="36.3" y1="3.9525" x2="33.6835" y2="9.0155" width="0" layer="19" extent="1-1"/>
-<wire x1="34.45" y1="1.85" x2="36.3" y2="3.9525" width="0" layer="19" extent="1-1"/>
-<wire x1="40.4" y1="3.65" x2="36.3" y2="3.9525" width="0" layer="19" extent="1-1"/>
+<wire x1="32.3" y1="3.9525" x2="33.6835" y2="9.0155" width="0" layer="19" extent="1-1"/>
+<wire x1="30.45" y1="1.85" x2="32.3" y2="3.9525" width="0" layer="19" extent="1-1"/>
+<wire x1="36.4" y1="3.65" x2="32.3" y2="3.9525" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESP_RXD">
 <contactref element="U3" pad="RX"/>
@@ -1088,9 +1091,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="13.0853625" y1="28.683496875" x2="13.0853625" y2="24" width="1.6764" layer="1"/>
 <wire x1="13.0853625" y1="24" x2="15.6731625" y2="21.4122" width="1.6764" layer="1"/>
 <wire x1="15.6731625" y1="21.4122" x2="18.7452" y2="21.4122" width="1.6764" layer="1"/>
-<wire x1="36.3" y1="1.3523" x2="38.2" y2="1.3523" width="0" layer="19" extent="1-1"/>
-<wire x1="40.4" y1="1.65" x2="38.2" y2="1.3523" width="0" layer="19" extent="1-1"/>
-<wire x1="22.69" y1="14.53" x2="36.3" y2="1.3523" width="0" layer="19" extent="1-1"/>
+<wire x1="34.2" y1="1.3523" x2="36.4" y2="1.65" width="0" layer="19" extent="1-1"/>
+<wire x1="32.3" y1="1.3523" x2="34.2" y2="1.3523" width="0" layer="19" extent="1-1"/>
+<wire x1="22.69" y1="14.53" x2="32.3" y2="1.3523" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="1A">
 <contactref element="U1" pad="6"/>
@@ -1226,9 +1229,9 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U3" pad="RESET"/>
 <contactref element="SW1" pad="1"/>
 <contactref element="SW1" pad="3"/>
-<wire x1="42.1" y1="3.65" x2="33.6835" y2="23.0155" width="0" layer="19" extent="1-1"/>
-<wire x1="44.45" y1="1.8" x2="42.1" y2="3.65" width="0" layer="19" extent="1-1"/>
-<wire x1="48.45" y1="1.8" x2="44.45" y2="1.8" width="0" layer="19" extent="1-1"/>
+<wire x1="31.2" y1="9.45" x2="33.6835" y2="23.0155" width="0" layer="19" extent="1-1"/>
+<wire x1="31.2" y1="5.45" x2="31.2" y2="9.45" width="0" layer="19" extent="1-1"/>
+<wire x1="38.1" y1="3.65" x2="31.2" y2="5.45" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="U2" pad="1"/>
@@ -1367,4 +1370,10 @@ Please make sure your boards conform to these design rules.</description>
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
