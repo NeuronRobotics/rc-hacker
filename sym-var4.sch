@@ -13283,6 +13283,9 @@ by exp-lbrs.ulp</description>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
 <part name="JP4" library="adafruit" deviceset="PINHD-1X6" device=""/>
+<part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
+<part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND19" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13353,7 +13356,7 @@ VCC Range:
 </instance>
 <instance part="+3V7" gate="G$1" x="60.96" y="111.76" rot="R90"/>
 <instance part="JP6" gate="A" x="180.34" y="220.98"/>
-<instance part="JP7" gate="A" x="195.58" y="220.98"/>
+<instance part="JP7" gate="A" x="198.12" y="220.98"/>
 <instance part="JP8" gate="A" x="210.82" y="220.98"/>
 <instance part="U3" gate="G$1" x="33.02" y="134.62"/>
 <instance part="SW1" gate="G$1" x="43.18" y="208.28" rot="R270"/>
@@ -13366,7 +13369,10 @@ VCC Range:
 <instance part="C7" gate="G$1" x="381" y="154.94"/>
 <instance part="GND18" gate="1" x="314.96" y="208.28"/>
 <instance part="+3V8" gate="G$1" x="294.64" y="154.94"/>
-<instance part="JP4" gate="A" x="238.76" y="220.98"/>
+<instance part="JP4" gate="A" x="294.64" y="91.44"/>
+<instance part="+3V9" gate="G$1" x="190.5" y="215.9" rot="R90"/>
+<instance part="GND16" gate="1" x="187.96" y="218.44" rot="R270"/>
+<instance part="GND19" gate="1" x="276.86" y="86.36" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -13460,6 +13466,28 @@ VCC Range:
 <pinref part="GND17" gate="1" pin="GND"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="JP7" gate="A" pin="5"/>
+<pinref part="JP7" gate="A" pin="4"/>
+<wire x1="195.58" y1="218.44" x2="195.58" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="JP7" gate="A" pin="3"/>
+<wire x1="195.58" y1="220.98" x2="195.58" y2="223.52" width="0.1524" layer="91"/>
+<junction x="195.58" y="220.98"/>
+<pinref part="JP7" gate="A" pin="2"/>
+<wire x1="195.58" y1="223.52" x2="195.58" y2="226.06" width="0.1524" layer="91"/>
+<junction x="195.58" y="223.52"/>
+<pinref part="JP7" gate="A" pin="1"/>
+<wire x1="195.58" y1="226.06" x2="195.58" y2="228.6" width="0.1524" layer="91"/>
+<junction x="195.58" y="226.06"/>
+<wire x1="195.58" y1="218.44" x2="190.5" y2="218.44" width="0.1524" layer="91"/>
+<junction x="195.58" y="218.44"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="A" pin="6"/>
+<wire x1="279.4" y1="86.36" x2="292.1" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="GND19" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -13526,6 +13554,11 @@ VCC Range:
 <pinref part="+3V8" gate="G$1" pin="+3V3"/>
 <junction x="294.64" y="152.4"/>
 </segment>
+<segment>
+<pinref part="JP7" gate="A" pin="6"/>
+<pinref part="+3V9" gate="G$1" pin="+3V3"/>
+<wire x1="195.58" y1="215.9" x2="193.04" y2="215.9" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="ESP_RXD" class="0">
 <segment>
@@ -13538,6 +13571,11 @@ VCC Range:
 <wire x1="317.5" y1="190.5" x2="299.72" y2="190.5" width="0.1524" layer="91"/>
 <label x="299.72" y="190.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="JP4" gate="A" pin="3"/>
+<wire x1="292.1" y1="93.98" x2="284.48" y2="93.98" width="0.1524" layer="91"/>
+<label x="284.48" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="ESP_TXD" class="0">
 <segment>
@@ -13549,6 +13587,11 @@ VCC Range:
 <pinref part="U5" gate="G$1" pin="LRCK"/>
 <wire x1="317.5" y1="195.58" x2="299.72" y2="195.58" width="0.1524" layer="91"/>
 <label x="299.72" y="195.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="A" pin="2"/>
+<wire x1="292.1" y1="96.52" x2="284.48" y2="96.52" width="0.1524" layer="91"/>
+<label x="284.48" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -13615,6 +13658,11 @@ VCC Range:
 <wire x1="121.92" y1="190.5" x2="129.54" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="187.96" x2="121.92" y2="190.5" width="0.1524" layer="91"/>
 <junction x="121.92" y="190.5"/>
+</segment>
+<segment>
+<pinref part="JP6" gate="A" pin="6"/>
+<wire x1="177.8" y1="215.9" x2="165.1" y2="215.9" width="0.1524" layer="91"/>
+<label x="165.1" y="215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="1A" class="0">
@@ -13687,6 +13735,11 @@ VCC Range:
 <pinref part="U5" gate="G$1" pin="SDA"/>
 <wire x1="317.5" y1="180.34" x2="299.72" y2="180.34" width="0.1524" layer="91"/>
 <label x="299.72" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="A" pin="1"/>
+<wire x1="292.1" y1="99.06" x2="284.48" y2="99.06" width="0.1524" layer="91"/>
+<label x="284.48" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO2" class="0">
@@ -13874,6 +13927,25 @@ VCC Range:
 <segment>
 <pinref part="U5" gate="G$1" pin="LINE_IN_R"/>
 <wire x1="314.96" y1="213.36" x2="317.5" y2="213.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="JP8" gate="A" pin="1"/>
+<pinref part="JP8" gate="A" pin="6"/>
+<wire x1="208.28" y1="228.6" x2="208.28" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="JP8" gate="A" pin="2"/>
+<wire x1="208.28" y1="226.06" x2="208.28" y2="223.52" width="0.1524" layer="91"/>
+<junction x="208.28" y="226.06"/>
+<pinref part="JP8" gate="A" pin="3"/>
+<wire x1="208.28" y1="223.52" x2="208.28" y2="220.98" width="0.1524" layer="91"/>
+<junction x="208.28" y="223.52"/>
+<pinref part="JP8" gate="A" pin="4"/>
+<wire x1="208.28" y1="220.98" x2="208.28" y2="218.44" width="0.1524" layer="91"/>
+<junction x="208.28" y="220.98"/>
+<pinref part="JP8" gate="A" pin="5"/>
+<wire x1="208.28" y1="218.44" x2="208.28" y2="215.9" width="0.1524" layer="91"/>
+<junction x="208.28" y="218.44"/>
 </segment>
 </net>
 </nets>
