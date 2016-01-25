@@ -5,7 +5,7 @@ a MONO audio DAC/AMP and 5 GPIO. It is Programmed over
 WIFI and is intended to be used to "Upcycle" old toys and
 turn them into programable robots.
 
-
+![logo](rchacker.png)
 ![pcb](rchacker-eagle.png)
 
 - ESP8266-12 wifi module
